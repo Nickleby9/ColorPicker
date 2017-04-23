@@ -94,8 +94,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                 r = sbRed.getProgress();
                 g = sbGreen.getProgress();
                 b = sbBlue.getProgress();
-                tvColor.setText("#" + (Integer.toHexString(Color.rgb(r, g, b))));
-                tvColor.setBackgroundColor(Color.rgb(r, g, b));
+//                tvColor.setText("#" + (Integer.toHexString(Color.rgb(r, g, b))));
+                ColorFragment.newInstance(String.valueOf(r),String.valueOf(g),String.valueOf(b));
+//                tvColor.setBackgroundColor(Color.rgb(r, g, b));
             }
         } catch (NumberFormatException e) {
 
@@ -105,20 +106,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
     @Override
     public void onFocusChange(View v, boolean hasFocus) {
-//        try {
-//            if (!isChanging) {
-//                sbRed.setProgress(Integer.parseInt(etRed.getText().toString()));
-//                sbGreen.setProgress(Integer.parseInt(etGreen.getText().toString()));
-//                sbBlue.setProgress(Integer.parseInt(etBlue.getText().toString()));
-//                TextView tvColor = (TextView) findViewById(R.id.tvColor);
-//                r = sbRed.getProgress();
-//                g = sbGreen.getProgress();
-//                b = sbBlue.getProgress();
-//                tvColor.setText("#" + (Integer.toHexString(Color.rgb(r, g, b))));
-//                tvColor.setBackgroundColor(Color.rgb(r, g, b));
-//            }
-//        } catch (NumberFormatException e) {
-//
-//        }
+
     }
 }

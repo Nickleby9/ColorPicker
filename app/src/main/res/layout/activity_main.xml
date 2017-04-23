@@ -138,20 +138,20 @@
         app:layout_constraintRight_toRightOf="@+id/etGreen"
         android:maxLines="1" />
 
-    <TextView
-        android:id="@+id/tvColor"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="54dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="#FFFFFF"
-        android:textAlignment="center"
-        android:textAllCaps="true"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.hilay.colorpicker.ColorFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sbBlue" />
+        app:layout_constraintTop_toBottomOf="@+id/sbBlue"
+        tools:layout="@layout/fragment_color" />
 
 
 </android.support.constraint.ConstraintLayout>
