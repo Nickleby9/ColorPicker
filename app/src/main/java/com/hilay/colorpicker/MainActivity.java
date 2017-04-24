@@ -94,9 +94,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                 r = sbRed.getProgress();
                 g = sbGreen.getProgress();
                 b = sbBlue.getProgress();
-//                tvColor.setText("#" + (Integer.toHexString(Color.rgb(r, g, b))));
+                tvColor.setText("#" + (Integer.toHexString(Color.rgb(r, g, b))));
                 ColorFragment.newInstance(String.valueOf(r),String.valueOf(g),String.valueOf(b));
-//                tvColor.setBackgroundColor(Color.rgb(r, g, b));
+                tvColor.setBackgroundColor(Color.rgb(r, g, b));
             }
         } catch (NumberFormatException e) {
 

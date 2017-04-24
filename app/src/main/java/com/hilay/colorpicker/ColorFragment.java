@@ -38,13 +38,13 @@ public class ColorFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        colorTextR = getArguments().getString(ARG_COLOR_TEXT_R);
-        colorTextG = getArguments().getString(ARG_COLOR_TEXT_G);
-        colorTextB = getArguments().getString(ARG_COLOR_TEXT_B);
-        int color = Color.rgb(Integer.valueOf(colorTextR),Integer.valueOf(colorTextG),Integer.valueOf(colorTextB));
-
-        tvColor = (TextView) view.findViewById(R.id.tvColor);
-        tvColor.setBackgroundColor(color);
+//        colorTextR = getArguments().getString(ARG_COLOR_TEXT_R);
+//        colorTextG = getArguments().getString(ARG_COLOR_TEXT_G);
+//        colorTextB = getArguments().getString(ARG_COLOR_TEXT_B);
+//        int color = Color.rgb(Integer.valueOf(colorTextR),Integer.valueOf(colorTextG),Integer.valueOf(colorTextB));
+//
+//        tvColor = (TextView) view.findViewById(R.id.tvColor);
+//        tvColor.setBackgroundColor(color);
 
 
     }
